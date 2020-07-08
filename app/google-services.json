@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "666559003429",
+    "firebase_url": "https://mytvshows-f195f.firebaseio.com",
+    "project_id": "mytvshows-f195f",
+    "storage_bucket": "mytvshows-f195f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:666559003429:android:fd49d10cefaac44f",
+        "android_client_info": {
+          "package_name": "com.example.lenovo.mytvshows"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "666559003429-92pkt8qm87omrtl5mfhv0b9hcu5vhc7u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDh1q6gdvb8BQxYDHrRZaxiGqGb5j6jpMI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

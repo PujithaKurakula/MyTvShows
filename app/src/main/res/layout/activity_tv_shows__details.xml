@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".TvShows_Details">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/padding"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/top"
+            android:background="@drawable/boder"
+            android:orientation="horizontal">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="@dimen/padding">
+
+                <ImageView
+                    android:id="@+id/backview"
+                    android:layout_width="@dimen/back_135"
+                    android:layout_height="@dimen/back_250"
+                    android:scaleType="fitXY"
+                    android:contentDescription="@string/image"
+                    android:src="@mipmap/ic_launcher_round" />
+            </android.support.v7.widget.CardView>
+
+            <View
+                android:layout_width="@dimen/margine_3"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="@dimen/marigine_left"
+                android:background="@color/text_color" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <ImageView
+                        android:layout_width="@dimen/five"
+                        android:layout_height="@dimen/six"
+                        android:contentDescription="@string/image"
+                        android:src="@drawable/ic_fast_forward_black_24dp"
+                        />
+
+                    <TextView
+                        android:id="@+id/originaltitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/top_17"
+                        android:textColor="@color/text_color"
+                        android:textSize="@dimen/tSize"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <ImageView
+                        android:layout_width="@dimen/five"
+                        android:layout_height="@dimen/six"
+                        android:contentDescription="@string/image"
+                        android:src="@drawable/date"
+                         />
+
+                    <TextView
+                        android:id="@+id/airdate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/top_17"
+                        android:textColor="@color/text_color"
+                        android:textSize="@dimen/tSize"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <ImageView
+                        android:layout_width="@dimen/five"
+                        android:layout_height="@dimen/six"
+                        android:contentDescription="@string/image"
+                        android:src="@drawable/rating"
+                         />
+
+                    <TextView
+                        android:id="@+id/rating"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/tSize"
+                        android:textColor="@color/text_color"
+                        android:layout_marginTop="@dimen/top_2" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.github.ivbaranov.mfb.MaterialFavoriteButton
+                        android:id="@+id/favbutton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:mfb_color="black"
+                        android:layout_marginEnd="@dimen/logo_w_h"
+                        app:mfb_size="80"
+                        app:mfb_type="heart" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <android.support.v7.widget.CardView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/top"
+            app:cardCornerRadius="@dimen/padding">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/widget_color"
+                    android:text="@string/plot"
+                    android:textSize="@dimen/top_2" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margine_3"
+                    android:background="@color/widget_color" />
+
+                <TextView
+                    android:id="@+id/info"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/overview"
+                    android:textSize="@dimen/tSize"
+                    android:fontFamily="cursive"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+
+        <com.google.android.gms.ads.AdView
+            xmlns:ads="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/adView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            ads:adSize="BANNER"
+            ads:adUnitId="ca-app-pub-3940256099942544/6300978111">
+        </com.google.android.gms.ads.AdView>
+
+    </LinearLayout>
+
+
+</ScrollView>
